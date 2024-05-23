@@ -1,0 +1,21 @@
+.header-container{
+    height: 100vh;  /*viewport height*/
+    background-color: var(--background-color); 
+    background-image: url("./images/banner/download.jfif");
+    background-repeat: no-repeat;
+    background-size: 33.33% 100%;
+    background-position: center;
+}
+
+.nav{
+    padding: 20px;
+    display:flex;
+    justify-content: space-between;
+    gap:20px;
+    color: var(--font-primary-color);
+}
+
+#right-menu-icon-id {
+    width: 175px;
+    text-align: center; 
+}
