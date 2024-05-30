@@ -1,56 +1,57 @@
-.header-container{
-    height: 100vh;  /*viewport height*/
-    background-color: var(--background-color); 
+.header-container {
+    height: 100%;
+    background-color: var(--background-color);
     background-image: url("./images/banner/banner.png");
     background-repeat: no-repeat;
     background-size: 40% 100%;
     background-position: center;
 }
 
-.nav{
-    display:flex;
+.nav {
+    display: flex;
     justify-content: space-between;
-    gap:20px;
+    gap: 20px;
     color: var(--font-primary-color);
     padding-top: 20px;
 }
 
 #right-menu-icon-id {
-    width: 175px;
-    text-align: right; 
+    width: 100px;
+    padding-left: 30px;
+    text-align: center;
 }
 
-.banner-title h1{
+.banner-title h1 {
     font-size: 132px;
     text-transform: uppercase;
     font-weight: bolder;
     margin: 40px 0;
 }
 
-.banner-desc p{
+.banner-desc p {
     font-size: 20px;
     text-transform: uppercase;
     font-weight: bolder;
     margin: 40px 0;
 }
 
-.banner-profile-container{
+.banner-profile-container {
     display: flex;
     justify-content: space-between;
     border-top: 1px solid var(--font-primary-color);
     border-bottom: 1px solid var(--font-primary-color);
 }
 
-.banner-profile-desc{
+.banner-profile-desc {
     display: flex;
     flex-direction: column;
     justify-content: end;
     font-size: 40px;
 }
 
-.work-icon-container{
+.work-icon-container {
     display: flex;
-    gap:12px;
+    gap: 12px;
     padding-bottom: 0px;
     border-bottom: 1px solid var(--font-primary-color);
     margin-bottom: 40px;
@@ -58,77 +59,88 @@
 
 .work-icon-container span {
     /* display: inline-block; Make sure the span is displayed */
-    width: 60px; /* Set a width */
-    height: 60px; /* Set a height */
+    width: 60px;
+    /* Set a width */
+    height: 60px;
+    /* Set a height */
     /* margin-left: 10px; Add some margin to separate it from the text */
 }
 
-.banner-image-container{
+.banner-image-container {
     background-color: var(--font-primary-color);
-    width:fit-content;
+    width: fit-content;
 }
 
 #banner-image {
-    width:300px;
-    height:300px;
+    width: 300px;
+    height: 300px;
 }
 
-.complete-project-card h1{
+.complete-project-card h1 {
     font-size: 152px;
 }
 
-.complete-project-card p{
+.complete-project-card p {
     text-transform: uppercase;
     font-size: 40px;
 }
 
-.experience h1{
+.experience h1 {
     font-size: 152px;
 }
 
-.experience p{
+.experience p {
     text-transform: uppercase;
     font-size: 40px;
 }
 
-.worked-with-agencies h1{
+.worked-with-agencies h1 {
     font-size: 152px;
 }
 
-.worked-with-agencies p{
+.worked-with-agencies p {
     text-transform: uppercase;
     font-size: 40px;
 }
 
-.total-clients h1{
+.total-clients h1 {
     font-size: 152px;
 }
 
-.total-clients p{
+.total-clients p {
     text-transform: uppercase;
     font-size: 40px;
 }
 
-.complete-project-container{
+.complete-project-container {
     display: flex;
     justify-content: space-between;
 }
 
+/*This is media query*/
 @media only screen and (min-width:200px) and (max-width:576px) {
     .nav {
         font-size: 16px;
     }
-
-    .complete-project-container{
+    .complete-project-container {
         flex-direction: column;
     }
-
-    .banner-title h1{
-        font-size: 25px;
-    }
-
     .banner-profile-container {
         flex-direction: column;
     }
-
+    .banner-image-container {
+        width: 100%;
+    }
+    #banner-image {
+        width: 100%;
+    }
+    .banner-title h1 {
+        font-size: 25px;
+    }
+    .nav {
+        gap: 48px;
+    }
+    .nav h3 {
+        font-size: 25px;
+    }
 }
