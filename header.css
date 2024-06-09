@@ -138,9 +138,12 @@
         font-size: 25px;
     }
     .nav {
-        gap: 48px;
+        gap: 5px;
     }
     .nav h3 {
         font-size: 25px;
+    }
+    #right-menu-icon-id {
+        padding-left: 0px;
     }
 }
