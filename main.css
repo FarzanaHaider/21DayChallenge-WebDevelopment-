@@ -144,6 +144,14 @@
 /* testimonial end */
 
 @media only screen and (min-width:200px) and (max-width:576px) {
+    
+    section.my-expertise.bg-gradient {
+        flex-direction: column;
+        gap: 20px;
+        margin: 0px;
+        padding: 0px;
+    }
+
     .projects{
         grid-template-columns: repeat(1,1fr);
     }
