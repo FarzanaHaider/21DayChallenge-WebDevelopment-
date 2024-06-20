@@ -119,7 +119,6 @@
 .left-side-single-card{
     display: flex;
     background-image: linear-gradient(to bottom right, #5d4af127, #b90bf938);
-
 }
 
 .testi-left-card-title{
@@ -138,6 +137,10 @@
     width: 35%;
 }
 
+.right-side-single-card-img img{
+    width: 100%;
+}
+
 /* testimonial end */
 
 @media only screen and (min-width:200px) and (max-width:576px) {
@@ -152,4 +155,25 @@
     .blog .img img{
         width:100%;
     }
+
+    .testimonial-cards{
+        flex-direction: column;
+    }
+
+    .left-side-single-card{
+        flex-direction: column;
+    }
+
+    .left-side-single-card img{
+        width: 100%;
+    }
+
+    .left-side-card-top{
+        width: 100%;
+    }
+
+    .right-side{
+        width: 100%;
+    }
+    
 }

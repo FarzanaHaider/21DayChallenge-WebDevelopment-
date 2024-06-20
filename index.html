@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./root.css" />
     <link rel="stylesheet" href="./header.css" />
     <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./footer.css" />
 </head>
 <body class="container">
 
@@ -87,6 +88,170 @@
     </section>
     <!-- header and navbar end-->
 
+    <section 
+    style="
+    margin:50px; 
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;"
+    class="my-expertise bg-gradient">
+
+    <div class="expertise-card" 
+    style="border: 1px solid white;
+        width: fit-content;
+        border-radius: 20px;
+        background-color: #68686833
+        ;">
+
+        <h1 style="padding:30px">UI/UX DESIGN</h1>
+
+        <div style="
+        border: 1px solid #68686833;
+        height: 360px; 
+        width:400px;
+        position: relative
+        ">
+
+        <div style="width: 100%; 
+                    position: absolute; 
+                    top:50px;z-index: 40;">
+            <img style="width: 100%" src="./images/expertise/expertise1.png">
+        </div>
+
+        <div 
+            style="
+                background-color: #6868684D;
+                ;
+                position: absolute;
+                height: 200px;
+                width: 300px;
+                left: 50px;
+                top: 10px;
+                z-index: 20;
+                border-radius: 30px;
+                ">
+        </div>
+
+        <div 
+        style="
+            background-color: #64616a;
+            height: 200px;
+            width: 350px;
+            position: absolute;
+            z-index: 30;
+            left: 25px;
+            top: 25px;
+            border-radius: 30px;
+            ">
+        </div>
+
+        </div>
+    </div>
+
+    <div class="expertise-card" 
+    style="border: 1px solid white;
+    background-color: #68686833;
+        width: fit-content;
+        border-radius: 20px;"> 
+
+        <h1 style="padding:30px">WEB DESIGN</h1>
+
+        <div style="
+        border: 1px solid #68686833;
+        height: 360px; 
+        width:400px;
+        position: relative
+        ">
+
+        <div style="width: 100%; 
+                    position: absolute; 
+                    top:50px;z-index: 40;">
+            <img style="width: 100%" src="./images/expertise/expertise2.png">
+        </div>
+
+        <div 
+            style="
+                background-color: #6868684D;
+                ;
+                position: absolute;
+                height: 200px;
+                width: 300px;
+                left: 50px;
+                top: 10px;
+                z-index: 20;
+                border-radius: 30px;
+                ">
+        </div>
+
+        <div 
+        style="
+            background-color: #64616a;
+            height: 200px;
+            width: 350px;
+            position: absolute;
+            z-index: 30;
+            left: 25px;
+            top: 25px;
+            border-radius: 30px;
+            ">
+        </div>
+
+        </div>
+    </div>
+
+    <div class="expertise-card" 
+    style="border: 1px solid white;
+    background-color: #68686833;
+        width: fit-content;
+        border-radius: 20px;">
+
+        <h1 style="padding:30px">WEB DEVELOPMENT</h1>
+
+        <div style="
+        border: 1px solid #68686833;
+        height: 360px; 
+        width:400px;
+        position: relative
+        ">
+
+        <div style="width: 100%; 
+                    position: absolute; 
+                    top:50px;z-index: 40;">
+            <img style="width: 100%" src="./images/expertise/expertise3.png">
+        </div>
+
+        <div 
+            style="
+                background-color: #6868684D;
+                ;
+                position: absolute;
+                height: 200px;
+                width: 300px;
+                left: 50px;
+                top: 10px;
+                z-index: 20;
+                border-radius: 30px;
+                ">
+        </div>
+
+        <div 
+        style="
+            background-color: #64616a;
+            height: 200px;
+            width: 350px;
+            position: absolute;
+            z-index: 30;
+            left: 25px;
+            top: 25px;
+            border-radius: 30px;
+            ">
+        </div>
+
+        </div>
+    </div>
+    
+    </section>
+
     <!-- main section -->
     <main>
 
@@ -99,7 +264,8 @@
             <h1>//MY PROJECTS</h1>
         </div>
 
-        <div class="projects">
+        <div id="projects" class="projects">
+
             <div class="project"> 
                 <img src="./images/project/image 3.png" alt="">
             </div>
@@ -112,10 +278,11 @@
             <div class="project"> 
                 <img src="./images/project/image 6.png" alt="">
             </div>
+            
         </div>
 
         <div class="check-all-project">
-            <button>Check All Projects</button>
+            <button onclick="handleShowMoreProject()">Check All Projects</button>
         </div>
 
         </section>
@@ -292,12 +459,100 @@
         </div>
 
         <div class="right-side">
-
+            <div class="right-side-single-card">
+                <div class="right-side-single-card-img">
+                    <img src="./images/testimonial/person3.png">
+                </div>
+                
+                <div>
+                    <h1 class="testi-left-card-title">“Exceptional Service, Outstanding Results!”</h1>
+                    <p class="testi-left-card-desc">Exceptional experience with this team! Their commitment to excellence and
+                         creativity surpassed my expectations. From concept to delivery, they turned
+                          my vision into a remarkable reality. Highly recommended for outstanding results!
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 
     </section>
     <!-- testimonial section ends-->
+
+    <!-- Footer section -->
+
+    <footer> 
+
+        <section class="footer-container">
+            <div class="left-footer-form">
+                <div class="form-title">
+                    <h1 id ="form-title">// wanna work together?</h1>
+                </div>
+
+                <form onsubmit="handleContact(event)" class="form">
+                    <input class="input" 
+                    type="text" 
+                    name="name" 
+                    placeholder="YOUR NAME"
+                    />
+
+                    <input class="input" 
+                    type="email" 
+                    name="email" 
+                    placeholder="YOUR EMAIL"
+                    />
+
+                    <input 
+                    style="margin-top: 70px;" 
+                    class="input" 
+                    type="text" 
+                    name="message" 
+                    placeholder="YOUR MESSAGE"
+                    />
+
+                    <button  type="submit" id="send-btn">SEND</button>
+                </form>
+
+                <div style="margin-top: 20px" id="success_container">
+                    <!-- <p>Your Name:Fara</p>
+                    <p>Your Email: fara@gamil.com</p>
+                    <p>Your Message: Hello</p> -->
+                </div>
+            </div>
     
+            <div class="right-footer-contact">
+                <div class="contact-title">
+                    <h1 id="contact-title">others way to contact</h1>
+                </div>
+
+                <div class="contact-desc">
+                    <p id="email-info">portfolio@gmail.com</p>
+                    <p id="number-info">+880 18000 00000</p>
+                </div>
+
+                <div class="social-icon">
+                    <a href=""><img src="./images/footer/Facebook.png"></a>
+                    <a href=""><img src="./images/footer/Twitter.png"></a>
+                    <a href=""><img src="./images/footer/Instagram.png"></a>
+                    <a href=""><img src="./images/footer/Linkedin.png"></a>
+                </div>
+            </div>
+        </section>
+
+        <div style="padding: 50px 50px;">
+            <hr>
+        </div>
+
+        <h1 style="text-align: center;
+        margin:25px 0px;
+        padding-bottom:50px">
+        © 2023, John Smith. All rights Reserved
+        </h1>
+
+    </footer>
+
+    <!-- Footer section ends-->
+
+    <script src="./script.js"></script>
+
 </body>
 </html>
